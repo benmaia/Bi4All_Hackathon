@@ -28,6 +28,17 @@ def room4all():
         confirm_date = ttk.Button(calendarpage, text="Confirmar", command=grad_date)
         confirm_date.grid(row=1, column=0, pady=10)
 
+    def require_accepted():
+        require_accepted = Toplevel(root)
+        require_accepted.title("Require Complete!")
+        requireacceptframe = ttk.Frame(require_accepted, padding="3 3 12 12")
+        requireacceptframe.grid(column=0, row=0, sticky=(N, W, E, S))
+        require_accepted.columnconfigure(0, weight=1)
+        require_accepted.rowconfigure(0, weight=1)
+        require_accepted_msg = ttk.Label(require_accepted, text="Require Accepeted!")
+        require_accepted_msg.grid(row=0, column=0, pady=10)
+
+
     # Label - Input
     led = ttk.Label(mainframe, text='Tipo de Sala: ')
     led1 = ttk.Label(mainframe, text="Dia: ")
@@ -66,6 +77,7 @@ def room4all():
         date = ed1.get()
         time_init = ed2.get()
         time_end = ed3.get()
+        require_accepted()
         #CRI = ed4.get()
         print(room_type, date, time_init, time_end)
         root.quit()
@@ -78,7 +90,7 @@ def room4all():
     bt = ttk.Button(mainframe, text="Reservar", command=room)
     bt.grid(row=5, column=1)
     bt1 = ttk.Button(mainframe, text="Ver salsas", command=exit)
-    bt1.grid(row=9, column=1)
+    bt1.grid(row=5, column=0)
 
     ed5 = ttk.Label(mainframe, text="Qualquer mensagem para o usuário")
     ed5.grid(row=7, columnspan=2)

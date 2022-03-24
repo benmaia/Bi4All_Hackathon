@@ -1,3 +1,4 @@
-{"room": "Smart (3 pessoas)", "date": "09/03/2022", "time_init": "09:30", "time_end": "10:00"}
-{"room": "Smart (3 pessoas)", "date": "15/04/2022", "time_init": "17:30", "time_end": "20:00"}
-{"room": "Smart (3 pessoas)", "date": "15/04/2022", "time_init": "17:30", "time_end": "11:30"}
+["Smart (3 pessoas)", "24/03/2022", "09:00", "09:00"]
+["Standar (6 pessoas)", "24/03/2022", "09:00", "09:00"]
+["Super (8 pessoas)", "24/03/2022", "09:00", "09:00"]
+["Smart (3 pessoas)", "06/05/2022", "09:00", "09:00"]

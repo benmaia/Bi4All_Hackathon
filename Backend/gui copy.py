@@ -84,41 +84,8 @@ class gui():
         self.time_end = self.text3.get()
         self.lista = [self.room_type, self.date, self.time_init, self.time_end]
         #e1 = RoomsManagement()
-        check = self.e1.new_schedule(self.date, self.room_type, self.time_init, self.time_end)
-        if check == False:
-            # root.destroy()
-            self.require_denied()
-            self.room4all()
-        else:
-            self.require_accepted()
+        self.e1.new_schedule(self.date, self.room_type, self.time_init, self.time_end)
         return self.lista
-
-    def require_denied(self):
-        self.require_denied = Toplevel(root)
-        self.require_denied.title("Require Complete!")
-        self.requiredeniedframe = ttk.Frame(self.require_denied, padding="3 3 12 12")
-        self.requiredeniedframe.grid(column=0, row=0, sticky=(N, W, E, S))
-        self.require_denied.columnconfigure(0, weight=1)
-        self.require_denied.rowconfigure(0, weight=1)
-        self.require_denied_msg = ttk.Label(self.require_denied, text="Require Denied!")
-        self.require_denied_msg.grid(row=0, column=0, pady=10)
-        self.require_denied_tryagain = ttk.Label(self.require_denied, text="try Again")
-        self.require_denied_tryagain.grid(row=2, column=0, pady=10, padx=10)
-
-    
-    def require_accepted(self):
-        self.require_accepted = Toplevel(root)
-        self.require_accepted.title("Require Complete!")
-        self.requireacceptframe = ttk.Frame(self.require_accepted, padding="3 3 12 12")
-        self.requireacceptframe.grid(column=0, row=0, sticky=(N, W, E, S))
-        self.require_accepted.columnconfigure(0, weight=1)
-        self.require_accepted.rowconfigure(0, weight=1)
-        self.require_accepted_msg = ttk.Label(self.require_accepted, text="Require Accepeted!")
-        self.require_accepted_msg.grid(row=0, column=0, pady=10)
-        self.require_accepted_room = ttk.Label(self.require_accepted, text="Sala: " + self.room_type)
-        self.require_accepted_room.grid(row=1, column=0, pady=10, padx=10)
-        self.require_accepted_room = ttk.Label(self.require_accepted, text="Data: " + self.date)
-        self.require_accepted_room.grid(row=2, column=0, padx=10)
 
     def calendar_page(self):
         self.calendarpage = Toplevel(root)
@@ -136,6 +103,20 @@ class gui():
         self.ed1.config(text = self.cal.get_date())
         self.var = self.cal.get_date()
         self.calendarpage.destroy()
+        
+    def require_accepted(self):
+        self.require_accepted = Toplevel(root)
+        self.require_accepted.title("Require Complete!")
+        self.requireacceptframe = ttk.Frame(self.require_accepted, padding="3 3 12 12")
+        self.requireacceptframe.grid(column=0, row=0, sticky=(N, W, E, S))
+        self.require_accepted.columnconfigure(0, weight=1)
+        self.require_accepted.rowconfigure(0, weight=1)
+        self.require_accepted_msg = ttk.Label(self.require_accepted, text="Require Accepeted!")
+        self.require_accepted_msg.grid(row=0, column=0, pady=10)
+        self.require_accepted_room = ttk.Label(self.require_accepted, text="Sala: " + text.get())
+        self.require_accepted_room.grid(row=1, column=0, pady=10, padx=10)
+        self.require_accepted_room = ttk.Label(self.require_accepted, text="Data: " + date_str)
+        self.require_accepted_room.grid(row=1, column=0, pady=10, padx=10)
         #confirm_date = ttk.Button(self.calendarpage, text="Confirmar", command=grad_date)
        # self.confirm_date.grid(row=1, column=0, pady=10)
 

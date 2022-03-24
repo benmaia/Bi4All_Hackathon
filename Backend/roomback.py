@@ -1,5 +1,4 @@
 from ast import Str
-import toml
 import os
 import json
 # pensar na possibilidade de acrescentar rooms
@@ -28,7 +27,7 @@ class RoomsManagement():
         
 
     def show_available(self):
-        print("As salas disponíveis são:") # checkar se há disponíveis antes de imprimir
+        print("As salas reservadas são:") # checkar se há disponíveis antes de imprimir
         try:
             os.chdir("schedules")
             with open ("schedule.txt", 'r') as s:
@@ -71,26 +70,49 @@ class RoomsManagement():
                     return key
     
     def book_room(self, key, val):
-        # for key, value in self.room.items():
-        #     for n in value:
-        #         if n == val:
-        #             value.remove(n)
-        #write retirando o horário selecionado
-        pass
-
-    
+        for key, value in self.room.items():
+            for n in value:
+                if n == val:
+                    return False
+        return True
+        
     def new_schedule(self, date, room, time_init, time_end):
         try:
             os.chdir("schedules")
             f = open(f"schedule.txt", 'a')
-            #f.write(f"room: {room}, date: {date}, time init: {time_init}, time end: {time_end}\n")
-            dict = {"room": room, "date" : date, "time_init" : time_init, "time_end" : time_end}
-            f.write(json.dumps(dict)+ "\n")
+            dict = [room, date, time_init, time_end]
+            check = self.check_schedual(room, date, time_init, time_end)
+            if check == False:
+                print("Não é possível registrar")
+                os.chdir("..")
+                return False
+            else:
+                pass
+            f.write(json.dumps(dict) + "\n")
             f.close()
             os.chdir("..")
+            return True
         except:
             print("Could not enter directory, please try again later.")
             
+    def check_schedual(self, room, date, time_init, time_end):
+        try:
+            with open ("schedule.txt", 'r') as s:
+                lines = s.readlines()
+                if lines == "":
+                    return True
+                for line in lines:
+                    if line.replace(" ", "") != "":
+                        line2 = json.loads(line)
+                        if line2[0] == room:
+                            if line2[1] == date and (line2[2] == time_init or line2[3] == time_end):
+                                #and (line2[2] > time_init and line2[3] < time_end):
+                                return False
+                        else:
+                            pass
+            return True
+        except Exception as e:
+            print(e)
 
 
         
