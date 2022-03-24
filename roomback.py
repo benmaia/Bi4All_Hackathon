@@ -1,19 +1,6 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    roomback.py                                        :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: jbuny-fe <jbuny-fe@student.42lisboa.com>   +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/23 18:31:10 by jbuny-fe          #+#    #+#              #
-#    Updated: 2022/03/23 20:05:06 by jbuny-fe         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-
-# pensar na possibilidade de acrescentar rooms
-
+from ast import Str
 import toml
+import os
 # pensar na possibilidade de acrescentar rooms
 
 
@@ -35,8 +22,8 @@ class RoomsManagement():
         self.people = None
         self.timeInit = None
         self.timeEnd = None
-        self.show_available()
-        self.input_user()
+        #self.show_available()
+        #self.input_user()
         
     def input_user(self):
         request = str(input("Deseja reservar alguma sala (yes/no)? ")).lower()
@@ -111,4 +98,15 @@ class RoomsManagement():
                 f.close()
         print(f"O horário {val} da {key} foi reservado com sucesso")
         self.show_available()
-         
+    
+    def new_schedule(self, date, room):
+        time = [9, 9.30, 10, 10.30, 11, 11.30, 12, 12.30, 13, 13.30, 14, 14.30, 15, 15.30, 16, 16.30, 17, 17.30, 18, 18.30, 19, 19.30, 20, 20.30, 21, 21.30]
+        os.chdir("schedules")
+        if room == 1:
+            room2 = "smart"
+        f = open(f"{date}.txt", 'w')
+        f.write(f"{room2}: {time} ")
+        f.close()
+        
+
+
