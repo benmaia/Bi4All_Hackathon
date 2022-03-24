@@ -1,6 +1,7 @@
 from ast import Str
 import toml
 import os
+import json
 # pensar na possibilidade de acrescentar rooms
 
 
@@ -18,41 +19,28 @@ class Room():
 class RoomsManagement():
 
     def __init__(self):
-        self.room = {"sala a": [8, 9, 10, 11], "sala b": [4, 5, 6]}
+        #self.room = {"sala a": [8, 9, 10, 11], "sala b": [4, 5, 6]}
         self.people = None
         self.timeInit = None
         self.timeEnd = None
         #self.show_available()
         #self.input_user()
         
-    def input_user(self):
-        request = str(input("Deseja reservar alguma sala (yes/no)? ")).lower()
-        if request.lower() == "yes":
-            self.input_reservation()
-        elif request.lower() == "no":
-            print("Have a nice day without a room ;)")
-        else:
-            print("Error - Input")
-            self.__init__()
-
-    def input_reservation(self):
-        self.people = input("Quantas pessoas para a reunião: ")
-        self.timeInit = int(input("Horário de início: "))
-        self.timeEnd = input("Horário de termino: ")
-        self.looking_for_room()
 
     def show_available(self):
         print("As salas disponíveis são:") # checkar se há disponíveis antes de imprimir
         try:
-            with open ("rooms", 'r') as f:
-                tk = toml.load(f)
-                self.sala_a = list(tk["sala_a"])
-                self.sala_b = list(tk["sala_b"])
-                f.close()
-                print(f"A sala a tem {self.sala_a} horários livres")
-                print(f"A sala a tem {self.sala_b} horários livres")
-        except:
-            pass
+            os.chdir("schedules")
+            with open ("schedule.txt", 'r') as s:
+                lines = s.readlines()
+                for line in lines:
+                    if line.replace(" ", "") != "":
+                        line2 = json.loads(line)
+                        print(line2)
+                s.close()
+            os.chdir("..")
+        except Exception as e:
+            print(e)
             #with open("rooms", 'w') as f:
                 #sala_a = [8, 9, 10, 11]
                 #sala_b = [4, 5, 6]
@@ -60,8 +48,6 @@ class RoomsManagement():
                 #f.write('sala_b = ' + str(int(sala_b)) + '\n')
                 #f.close()
 
-        for i in self.room:
-            print(i, self.room[i])
     
     def looking_for_room(self):
         j = 0
@@ -90,23 +76,23 @@ class RoomsManagement():
         #         if n == val:
         #             value.remove(n)
         #write retirando o horário selecionado
-        self.sala_a.remove(val)
-        print(self.sala_a)
-        with open("rooms", 'w') as f:
-                f.write('sala_a = ' + str(self.sala_a) + '\n')
-                f.write('sala_b = ' + str(self.sala_b) + '\n')
-                f.close()
-        print(f"O horário {val} da {key} foi reservado com sucesso")
-        self.show_available()
+        pass
+
     
-    def new_schedule(self, date, room):
-        time = [9, 9.30, 10, 10.30, 11, 11.30, 12, 12.30, 13, 13.30, 14, 14.30, 15, 15.30, 16, 16.30, 17, 17.30, 18, 18.30, 19, 19.30, 20, 20.30, 21, 21.30]
-        os.chdir("schedules")
-        if room == 1:
-            room2 = "smart"
-        f = open(f"{date}.txt", 'w')
-        f.write(f"{room2}: {time} ")
-        f.close()
+    def new_schedule(self, date, room, time_init, time_end):
+        try:
+            os.chdir("schedules")
+            f = open(f"schedule.txt", 'a')
+            #f.write(f"room: {room}, date: {date}, time init: {time_init}, time end: {time_end}\n")
+            dict = {room: room, date: date, time_init: time_init, time_end: time_end}
+            f.write(json.dumps(dict)+ "\n")
+            f.close()
+            os.chdir("..")
+        except:
+            print("Could not enter directory, please try again later.")
+            
+
+
         
 
-
+        
