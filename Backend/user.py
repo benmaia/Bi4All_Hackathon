@@ -1,12 +1,11 @@
 from roomback import *
+from gui import *
 
-#while True:
-    #tipos de sala
-    #Smart - 3 pessoas = 0
+values = gui()
+values.room4all()
 
-    #Dia 
 
-    #Hora
-    # list 0-11
-e1 = RoomsManagement()
 
+
+#e1 = RoomsManagement()
+#e1.new_schedule(date, room_type)
