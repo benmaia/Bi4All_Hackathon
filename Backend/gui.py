@@ -28,12 +28,14 @@ class gui():
         self.led3 = ttk.Label(mainframe, text="Horário de Término: ")
         #led4 = ttk.Label(mainframe, text="Número do CRI: ")
         
-        self.text = StringVar(mainframe)
-        self.text.set('Choices')
+        self.text0 = StringVar(mainframe)
+        self.text0.set('Choices')
         self.rooms = ['Smart (3 pessoas)', 'Standar (6 pessoas)', 'Super (8 pessoas)']
-        self.ed = ttk.OptionMenu(mainframe, self.text, *self.rooms)
-        
+        self.ed = ttk.OptionMenu(mainframe, self.text0, *self.rooms)
+
         self.ed1 = ttk.Button(mainframe, text="Click Here!", command=self.calendar_page)
+        #self.date_text = self.ed1.
+        #print(self.date_text)
         
         self.text2 = StringVar(mainframe)
         self.text2.set('Horas')
@@ -76,8 +78,8 @@ class gui():
     root.quit()
 
     def room(self):
-        self.room_type = self.text.get()
-        self.date = self.textd.get()
+        self.room_type = self.text0.get()
+        self.date = self.var
         self.time_init = self.text2.get()
         self.time_end = self.text3.get()
         self.lista = [self.room_type, self.date, self.time_init, self.time_end]
@@ -94,10 +96,13 @@ class gui():
         self.calendarpage.rowconfigure(0, weight=1)
         self.cal = Calendar(self.calendarpage, selectmode = 'day')
         self.cal.grid(row=0,column=0)
-        self.print_date = ttk.Label(self.calendarpage, text='')
-        self.print_date.grid(row=2, column=0, pady=10)
-        def grad_date():
-    	    self.print_date.config(text = self.cal.get_date())
+        confirm_date = ttk.Button(self.calendarpage, text="Confirmar", command=self.grad_date)
+        confirm_date.grid(row=1, column=0, pady=10)
+    
+    def grad_date(self):
+        self.ed1.config(text = self.cal.get_date())
+        self.var = self.cal.get_date()
+        self.calendarpage.destroy()
         #confirm_date = ttk.Button(self.calendarpage, text="Confirmar", command=grad_date)
        # self.confirm_date.grid(row=1, column=0, pady=10)
 

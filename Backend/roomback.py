@@ -84,7 +84,7 @@ class RoomsManagement():
             os.chdir("schedules")
             f = open(f"schedule.txt", 'a')
             #f.write(f"room: {room}, date: {date}, time init: {time_init}, time end: {time_end}\n")
-            dict = {room: room, date: date, time_init: time_init, time_end: time_end}
+            dict = {"room": room, "date" : date, "time_init" : time_init, "time_end" : time_end}
             f.write(json.dumps(dict)+ "\n")
             f.close()
             os.chdir("..")
