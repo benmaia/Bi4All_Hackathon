@@ -94,11 +94,12 @@
 	<li> Create a database;
 	<li> Transpilation for python;
 	<li> Create tables through python;
+	<li> Comunication between python and MySQL;
 </ul>
 
 <h3>List Database:</h3>
 <ul>
-	<li> Comunication between python and MySQL (50%);
+	<li> Implement the DB in the backend;
 	<li> Implement the DB in local server of Bi4All;
 </ul>
 
