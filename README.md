@@ -14,7 +14,7 @@
 <ul>
   <li> Create a good user experience;
 	<li> Show all schedules (free and ocupied);
-	<li> Reserve rooms and managment os free schedules;
+	<li> Reserve rooms and managment of free schedules;
 	<li> Show meeting duration;
 	<li> Open/Close schedule + Max capacity;
 </ul>
