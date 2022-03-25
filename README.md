@@ -86,7 +86,7 @@
 <h3>List Database:</h3>
 <ul>
 	<li> Comunication between python and MySQL (50%);
-	<li> Implementacao da DB num servidor local;
+	<li> Implement the DB in local server of Bi4All;
 </ul>
 
 <h2 id="cv">Team</h2>
