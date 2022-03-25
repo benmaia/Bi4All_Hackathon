@@ -77,6 +77,7 @@
 	    <li> Search rooms;
 	    <li> Reservations;
 	    <li> Verfication;
+	    <li> Return list of reservations per day;
 	    <li> Get User.
     </ul>
 </ul>
@@ -84,7 +85,6 @@
 <h3>List Backend:</h3>
 <ul>
 	<li> Return meeting duration;
-	<li> Return list of reservations per day;
 	<li> Cancel reservation;
 	<li> Offering other options of schedule.
 </ul>
