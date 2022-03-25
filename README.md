@@ -13,8 +13,16 @@
 </a></p>
 
 <h2 id="rmap">Roadmap</h2>
+
 <h3>Problem to Solve</h3>
-<p> 
+<ul> 
+	<li> Schedule meetings through Outlook isnt user friendly;
+	<li> High number of rooms to verify;
+	<li> The managment of the rooms can't handle the max capacity of the room'
+	<li> There is no algorithm that correlates the free schedules, the capacity of the room and the duration time;
+	<li> There is no central platform to managment all rooms;
+</ul>
+
 <h3> Objective: </h3>
 <ul>
   <li> Create a good user experience;
@@ -96,7 +104,7 @@
 
 <h2 id="frmap">Future Roadmap</h2>
 <ul>
-	<li> Build an platform with:
+	<li> Build a platform with:
 	<ul>
 		<li> Our schedule mettings app;
 		<li> An event agenda;
