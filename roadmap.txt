@@ -1,0 +1,58 @@
+ROADMAP	
+
+
+Objetivo: - Criar uma boa experiencia para o utilizador;
+	  - Indidicar horarios disponiveis e com ocupacao;
+	  - Marcacao de salas e gestao de todos os horarios disponiveis;
+	  - Indicar duracao da reuniao;
+	  - Horario de abertura/fecho + capacidade maxima;
+
+Pontos:
+	- Desenvolver uma app:
+	- Tools:
+		- Frontend Tkinter
+		- Backend python
+		- DB MySQL
+
+Achievments Frontend:
+	- Option menu para:
+		- Escolha das salas;
+		- Marcacao de reuniao;
+	- Buttons & Labels:
+		- Criar reserva;
+		- Ver reservas;
+		- Ajuda;
+	- Integracao de calendario;
+
+List Frontend:
+	- Mostrar as reservas do dia;
+	- Botao cancelar reservas;
+	- Colocar icon;
+	- Colocar notificacoes antes da reuniao;
+	- Melhorar o GUI;
+
+Achievments Backend:
+	- Criar classes (User, Room , Managment);
+	- Managment:
+		- Ver disponibilidade;
+		- Procurar salas;
+		- Reservas;
+		- Verficacao;
+
+List Backend:
+	- Returnar duracao;
+	- Pegar user;
+	- Returnar lista de reservas por data;
+	- Cancelar reserva;
+	- Oferecer outras opcoes de reserva;
+
+Achievments Database:
+	- Criar a base de dados;
+	- Transpilacao para python;
+	- Criar tabelas atraves do python;
+
+List Database:
+	- Importacao de dados de python para MySQL (50%)
+	- Comunicacao completa entre Python e MySQL;
+	- Implementacao da DB num servidor local;
+
