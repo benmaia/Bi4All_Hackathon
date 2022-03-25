@@ -7,82 +7,81 @@
 </a></p>
 
 <h2 id="rmap">Roadmap</h2>
-<h3> Objectivo: </h3>
+<h3> Objectiv: </h3>
 <ul>
-  <li> Criar uma boa experiencia para o utilizador;
-	<li> Indidicar horarios disponiveis e com ocupacao;
-	<li> Marcacao de salas e gestao de todos os horarios disponiveis;
-	<li> Indicar duracao da reuniao;
-	<li> Horario de abertura/fecho + capacidade maxima;
+  <li> Create a good user experience;
+	<li> Show all schedules (free and ocupied);
+	<li> Reserve rooms and managment os free schedules;
+	<li> Show meeting duration;
+	<li> Open/Close schedule + Max capacity;
 </ul>
 
-<h3>Pontos:</h3>
+<h3>Main Frame:</h3>
 <ul>
-	<li>Desenvolver uma app:
+	<li>Build an app:
 	<li>Tools:
     <ul>
-		  <li> Frontend Tkinter
-		  <li> Backend python
-		  <li> DB MySQL
+	    <li> Frontend - Tkinter
+	    <li> Backend - Python3
+	    <li> DataBase - MySQL
     </ul>
 </ul>
 
 <h3>Achievments Frontend:</h3>
 <ul>
-	<li> Option menu para:
+	<li> Option menu to:
     <ul>
-		  <li> Escolha das salas;
-		  <li> Marcacao de reuniao;
+	    <li> Choose the rooms;
+	    <li> Marcacao de reuniao;
     </ul>
 	<li> Buttons & Labels:
     <ul>
-		  <li> Criar reserva;
-		  <li> Ver reservas;
-		  <li> Ajuda;
+	    <li> Reserve Room;
+	    <li> See reservers;
+	    <li> Help;
     </ul>
-	<li> Integracao de calendario;
+	<li> Built in calendar;
 </ul>
 
 <h3>List Frontend:</h3>
 <ul>
-	<li> Mostrar as reservas do dia;
-	<li> Botao cancelar reservas;
-	<li> Colocar icon;
-	<li> Colocar notificacoes antes da reuniao;
-	<li> Melhorar o GUI;
+	<li> Show the meetings for the day;
+	<li> Cancel meeting button;
+	<li> Put an Icon;
+	<li> Notifications before meeting(15 mins earlier);
+	<li> Improve GUI;
 </ul>
 
 <h3>Achievments Backend:</h3>
 <ul>
-	<li> Criar classes (User, Room , Managment);
+	<li> Create classes (User, Room , Managment);
 	<li> Managment:
     <ul>
-		  <li> Ver disponibilidade;
-		  <li> Procurar salas;
-		  <li> Reservas;
-		  <li> Verficacao;
+	    <li> See availability;
+	    <li> Search rooms;
+	    <li> Reserves;
+	    <li> Verfication;
     </ul>
 </ul>
 
 <h3>List Backend:</h3>
 <ul>
-	<li> Returnar duracao;
-	<li> Pegar user;
-	<li> Returnar lista de reservas por data;
-	<li> Cancelar reserva;
-	<li> Oferecer outras opcoes de reserva;
+	<li> Return meeting duration;
+	<li> Get a user;
+	<li> Return list of reserves per day;
+	<li> Cancel reserve;
+	<li> Offering other options of schedule;
 </ul>
 
 <h3>Achievments Database:</h3>
 <ul>
-	<li> Criar a base de dados;
-	<li> Transpilacao para python;
-	<li> Criar tabelas atraves do python;
+	<li> Create a database;
+	<li> Transpilation for python;
+	<li> Create tables through python;
 </ul>
 
 <h3>List Database:</h3>
 <ul>
-	<li> Importacao de dados de python para MySQL (50%)
-	<li> Comunicacao completa entre Python e MySQL;
+	<li> Comunication between python and MySQL (50%);
 	<li> Implementacao da DB num servidor local;
 </ul>
