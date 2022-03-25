@@ -5,11 +5,16 @@
 <p><a href="#rmap">
   Roadmap
 </a></p>
+<p><a href="#frmap">
+  Future Roadmap
+</a></p>
 <p><a href="cv">
   Team
 </a></p>
 
 <h2 id="rmap">Roadmap</h2>
+<h3>Problem to Solve</h3>
+<p> 
 <h3> Objective: </h3>
 <ul>
   <li> Create a good user experience;
@@ -87,6 +92,18 @@
 <ul>
 	<li> Comunication between python and MySQL (50%);
 	<li> Implement the DB in local server of Bi4All;
+</ul>
+
+<h2 id="frmap">Future Roadmap</h2>
+<ul>
+	<li> Build an platform with:
+	<ul>
+		<li> Our schedule mettings app;
+		<li> An event agenda;
+		<li> Profile for each user (With contact info and a little bio, to promote social engagement)
+		<li> Integration with Microsoft Teams
+		<li> Cluster view (To see if the person is at Bi4All[Wifi])
+	</ul>
 </ul>
 
 <h2 id="cv">Team</h2>
