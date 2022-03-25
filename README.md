@@ -16,7 +16,7 @@
 
 <h3>Problem to Solve</h3>
 <ul> 
-	<li> Schedule meetings through Outlook isnt user friendly;
+	<li> Schedule meetings through Outlook isn't user friendly;
 	<li> High number of rooms to verify;
 	<li> The managment of the rooms can't handle the max capacity of the room'
 	<li> There is no algorithm that correlates the free schedules, the capacity of the room and the duration time;
