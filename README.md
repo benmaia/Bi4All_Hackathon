@@ -77,13 +77,13 @@
 	    <li> Search rooms;
 	    <li> Reserves;
 	    <li> Verfication;
+	    <li> Get User;
     </ul>
 </ul>
 
 <h3>List Backend:</h3>
 <ul>
 	<li> Return meeting duration;
-	<li> Get a user;
 	<li> Return list of reserves per day;
 	<li> Cancel reserve;
 	<li> Offering other options of schedule;
