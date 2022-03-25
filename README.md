@@ -5,11 +5,24 @@
 <p><a href="#rmap">
   Roadmap
 </a></p>
+<p><a href="#frmap">
+  Future Roadmap
+</a></p>
 <p><a href="cv">
   Team
 </a></p>
 
 <h2 id="rmap">Roadmap</h2>
+
+<h3>Problem to Solve</h3>
+<ul> 
+	<li> Schedule meetings through Outlook isn't user friendly;
+	<li> High number of rooms to verify;
+	<li> The managment of the rooms can't handle the max capacity of the room'
+	<li> There is no algorithm that correlates the free schedules, the capacity of the room and the duration time;
+	<li> There is no central platform to managment all rooms;
+</ul>
+
 <h3> Objective: </h3>
 <ul>
   <li> Create a good user experience;
@@ -62,31 +75,33 @@
     <ul>
 	    <li> See availability;
 	    <li> Search rooms;
-	    <li> Reservations;
-	    <li> Verification.
     </ul>
 </ul>
 
 <h3>List Backend:</h3>
 <ul>
 	<li> Return meeting duration;
-	<li> Get a user;
-	<li> Return list of reservations per day;
-	<li> Cancel reservation;
-	<li> Offer other options for scheduling.
 </ul>
 
 <h3>Achievments Database:</h3>
 <ul>
 	<li> Create a database;
-	<li> Transpilation to python;
-	<li> Create tables with python module mysql.connector.
 </ul>
 
 <h3>List Database:</h3>
 <ul>
-	<li> Comunication between python and MySQL (50%);
-	<li> Implement the DB in local server of Bi4All.
+</ul>
+
+<h2 id="frmap">Future Roadmap</h2>
+<ul>
+	<li> Build a platform with:
+	<ul>
+		<li> Our schedule mettings app;
+		<li> An event agenda;
+		<li> Profile for each user (With contact info and a little bio, to promote social engagement)
+		<li> Integration with Microsoft Teams
+		<li> Cluster view (To see if the person is at Bi4All[Wifi])
+	</ul>
 </ul>
 
 <h2 id="cv">Team</h2>
