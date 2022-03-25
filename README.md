@@ -27,9 +27,9 @@
 <ul>
   <li> Create a good user experience;
 	<li> Show all schedules (free and ocupied);
-	<li> Reserve rooms and managment os free schedules;
+	<li> Reserve rooms and managment of free schedules;
 	<li> Show meeting duration;
-	<li> Open/Close schedule + Max capacity;
+	<li> Open/Close schedule + Max capacity.
 </ul>
 
 <h3>Main Frame:</h3>
@@ -37,9 +37,9 @@
 	<li>Build an app:
 	<li>Tools:
     <ul>
-	    <li> Frontend - Tkinter
-	    <li> Backend - Python3
-	    <li> DataBase - MySQL
+	    <li> Frontend - Tkinter;
+	    <li> Backend - Python3;
+	    <li> DataBase - MySQL.
     </ul>
 </ul>
 
@@ -48,15 +48,15 @@
 	<li> Option menu to:
     <ul>
 	    <li> Choose the rooms;
-	    <li> Marcacao de reuniao;
+	    <li> Schedule meeting;
     </ul>
 	<li> Buttons & Labels:
     <ul>
 	    <li> Reserve Room;
-	    <li> See reservers;
+	    <li> See reservations;
 	    <li> Help;
     </ul>
-	<li> Built in calendar;
+	<li> Built in calendar.
 </ul>
 
 <h3>List Frontend:</h3>
@@ -65,7 +65,7 @@
 	<li> Cancel meeting button;
 	<li> Put an Icon;
 	<li> Notifications before meeting(15 mins earlier);
-	<li> Improve GUI;
+	<li> Improve GUI.
 </ul>
 
 <h3>Achievments Backend:</h3>
@@ -75,32 +75,21 @@
     <ul>
 	    <li> See availability;
 	    <li> Search rooms;
-	    <li> Reserves;
-	    <li> Verfication;
-	    <li> Get User;
     </ul>
 </ul>
 
 <h3>List Backend:</h3>
 <ul>
 	<li> Return meeting duration;
-	<li> Return list of reserves per day;
-	<li> Cancel reserve;
-	<li> Offering other options of schedule;
 </ul>
 
 <h3>Achievments Database:</h3>
 <ul>
 	<li> Create a database;
-	<li> Transpilation for python;
-	<li> Create tables through python;
-	<li> Comunication between python and MySQL;
 </ul>
 
 <h3>List Database:</h3>
 <ul>
-	<li> Implement the DB in the backend;
-	<li> Implement the DB in local server of Bi4All;
 </ul>
 
 <h2 id="frmap">Future Roadmap</h2>
