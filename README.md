@@ -35,12 +35,12 @@
 	<li> Option menu to:
     <ul>
 	    <li> Choose the rooms;
-	    <li> Marcacao de reuniao;
+	    <li> Schedule meeting;
     </ul>
 	<li> Buttons & Labels:
     <ul>
 	    <li> Reserve Room;
-	    <li> See reservers;
+	    <li> See reservations;
 	    <li> Help;
     </ul>
 	<li> Built in calendar;
@@ -62,8 +62,8 @@
     <ul>
 	    <li> See availability;
 	    <li> Search rooms;
-	    <li> Reserves;
-	    <li> Verfication;
+	    <li> Reservations;
+	    <li> Verification;
     </ul>
 </ul>
 
@@ -71,9 +71,9 @@
 <ul>
 	<li> Return meeting duration;
 	<li> Get a user;
-	<li> Return list of reserves per day;
-	<li> Cancel reserve;
-	<li> Offering other options of schedule;
+	<li> Return list of reservations per day;
+	<li> Cancel reservation;
+	<li> Offer other options for scheduling;
 </ul>
 
 <h3>Achievments Database:</h3>
