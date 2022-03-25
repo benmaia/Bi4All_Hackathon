@@ -14,32 +14,32 @@
 
 <h2 id="rmap">Roadmap</h2>
 
-<h3>Problem to Solve</h3>
+<h3>Problem to Solve: </h3>
 <ul> 
 	<li> Schedule meetings through Outlook isn't user friendly;
 	<li> High number of rooms to verify;
-	<li> The managment of the rooms can't handle the max capacity of the room;
+	<li> The management of the rooms can't handle the max capacity of the room;
 	<li> There is no algorithm that correlates the free schedules, the capacity of the room and the duration time;
-	<li> There is no central platform to managment all rooms;
+	<li> There is no central platform to manage all rooms.
 </ul>
 
 <h3> Objective: </h3>
 <ul>
   <li> Create a good user experience;
 	<li> Show all schedules (free and ocupied);
-	<li> Reserve rooms and managment os free schedules;
+	<li> Reservation of rooms and management of free schedules;
 	<li> Show meeting duration;
-	<li> Open/Close schedule + Max capacity;
+	<li> Open/Close schedule + Max capacity.
 </ul>
 
 <h3>Main Frame:</h3>
 <ul>
-	<li>Build an app:
+	<li>Build an app;
 	<li>Tools:
     <ul>
-	    <li> Frontend - Tkinter
-	    <li> Backend - Python3
-	    <li> DataBase - MySQL
+	    <li> Frontend - Tkinter;
+	    <li> Backend - Python3;
+	    <li> DataBase - MySQL.
     </ul>
 </ul>
 
@@ -48,16 +48,16 @@
 	<li> Option menu to:
     <ul>
 	    <li> Choose the rooms;
-	    <li> Schedule Meetings;
+	    <li> Schedule Meetings.
     </ul>
 	<li> Buttons & Labels:
     <ul>
 	    <li> Reserve Room;
-	    <li> See reservers;
-	    <li> Help;
+	    <li> See reservations;
+	    <li> Help.
     </ul>
 	<li> Built in calendar;
-	<li> Show the meetings for the day;
+	<li> Show the meetings for the day.
 </ul>
 
 <h3>List Frontend:</h3>
@@ -65,28 +65,28 @@
 	<li> Cancel meeting button;
 	<li> Put an Icon;
 	<li> Notifications before meeting(15 mins earlier);
-	<li> Improve GUI;
+	<li> Improve GUI.
 </ul>
 
 <h3>Achievments Backend:</h3>
 <ul>
-	<li> Create classes (User, Room , Managment);
-	<li> Managment:
+	<li> Create classes (User, Room , Management);
+	<li> Management:
     <ul>
 	    <li> See availability;
 	    <li> Search rooms;
-	    <li> Reserves;
+	    <li> Reservations;
 	    <li> Verfication;
-	    <li> Get User;
+	    <li> Get User.
     </ul>
 </ul>
 
 <h3>List Backend:</h3>
 <ul>
 	<li> Return meeting duration;
-	<li> Return list of reserves per day;
-	<li> Cancel reserve;
-	<li> Offering other options of schedule;
+	<li> Return list of reservations per day;
+	<li> Cancel reservation;
+	<li> Offering other options of schedule.
 </ul>
 
 <h3>Achievments Database:</h3>
@@ -94,13 +94,13 @@
 	<li> Create a database;
 	<li> Transpilation for python;
 	<li> Create tables through python;
-	<li> Comunication between python and MySQL;
+	<li> Comunication between python and MySQL.
 </ul>
 
 <h3>List Database:</h3>
 <ul>
 	<li> Implement the DB in the backend;
-	<li> Implement the DB in local server of Bi4All;
+	<li> Implement the DB in local server of Bi4All.
 </ul>
 
 <h2 id="frmap">Future Roadmap</h2>
@@ -111,7 +111,7 @@
 		<li> An event agenda;
 		<li> Profile for each user (With contact info and a little bio, to promote social engagement);
 		<li> Integration with Microsoft Teams;
-		<li> Cluster view (To see if the person is at Bi4All[Wifi]);
+		<li> Cluster view (To see if the person is at Bi4All[Wifi]).
 	</ul>
 </ul>
 
