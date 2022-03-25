@@ -91,14 +91,14 @@
 
 <h2 id="cv">Team</h2>
 <h3> Bernardo Maia </h3>
-<a href="benmaia.github.io/" target="_blank">Web-Portfolio</a>
+<a href="https://benmaia.github.io/" target="_blank">Web-Portfolio</a>
 <p>
 <a href="https://github.com/benmaia" target="_blank">Github</a>
 <h3> Diogo Antunes </h3>
-<a href="https://github.com/Diogo13Antunes" target="_blank">CV</a>
+<a href="https://github.com/Diogo13Antunes" target="_blank">Github</a>
 <h3> Guilherme Seletti </h3>
-<a href="https://github.com/gponti-s" target="_blank">CV</a>
+<a href="https://github.com/gponti-s" target="_blank">Github</a>
 <h3> Joao Buny Alves </h3>
-<a href="https://github.com/BunyMan" target="_blank">CV</a>
+<a href="https://github.com/BunyMan" target="_blank">Github</a>
 <h3> Rodrigo Estrela </h3>
-<a href="https://github.com/RodrigoEstrela" target="_blank">CV</a>
+<a href="https://github.com/RodrigoEstrela" target="_blank">Github</a>
