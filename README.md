@@ -16,7 +16,7 @@
 	<li> Show all schedules (free and ocupied);
 	<li> Reserve rooms and managment of free schedules;
 	<li> Show meeting duration;
-	<li> Open/Close schedule + Max capacity;
+	<li> Open/Close schedule + Max capacity.
 </ul>
 
 <h3>Main Frame:</h3>
@@ -24,9 +24,9 @@
 	<li>Build an app:
 	<li>Tools:
     <ul>
-	    <li> Frontend - Tkinter
-	    <li> Backend - Python3
-	    <li> DataBase - MySQL
+	    <li> Frontend - Tkinter;
+	    <li> Backend - Python3;
+	    <li> DataBase - MySQL.
     </ul>
 </ul>
 
@@ -43,7 +43,7 @@
 	    <li> See reservations;
 	    <li> Help;
     </ul>
-	<li> Built in calendar;
+	<li> Built in calendar.
 </ul>
 
 <h3>List Frontend:</h3>
@@ -52,7 +52,7 @@
 	<li> Cancel meeting button;
 	<li> Put an Icon;
 	<li> Notifications before meeting(15 mins earlier);
-	<li> Improve GUI;
+	<li> Improve GUI.
 </ul>
 
 <h3>Achievments Backend:</h3>
@@ -63,7 +63,7 @@
 	    <li> See availability;
 	    <li> Search rooms;
 	    <li> Reservations;
-	    <li> Verification;
+	    <li> Verification.
     </ul>
 </ul>
 
@@ -73,20 +73,20 @@
 	<li> Get a user;
 	<li> Return list of reservations per day;
 	<li> Cancel reservation;
-	<li> Offer other options for scheduling;
+	<li> Offer other options for scheduling.
 </ul>
 
 <h3>Achievments Database:</h3>
 <ul>
 	<li> Create a database;
-	<li> Transpilation for python;
-	<li> Create tables through python;
+	<li> Transpilation to python;
+	<li> Create tables with python module mysql.connector.
 </ul>
 
 <h3>List Database:</h3>
 <ul>
 	<li> Comunication between python and MySQL (50%);
-	<li> Implement the DB in local server of Bi4All;
+	<li> Implement the DB in local server of Bi4All.
 </ul>
 
 <h2 id="cv">Team</h2>
