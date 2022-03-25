@@ -105,7 +105,7 @@ class RoomsManagement():
                     if line.replace(" ", "") != "":
                         line2 = json.loads(line)
                         if line2[0] == room:
-                            if line2[1] == date and (line2[2] == time_init or line2[3] == time_end) or (line2[2] < time_init and line2[3] > time_end):
+                            if line2[1] == date and (line2[2] == time_init and line2[3] == time_end) or (line2[2] < time_init and line2[3] > time_end):
                                 print("invalid Imput!")
                                 return False
                             else:
@@ -142,7 +142,7 @@ class RoomsManagement():
                         line2 = json.loads(line)
                         print("cheguei 3")
                         if line2[1] == data:
-                            print("chegeui 4")
+                            print("cheguei 4")
                             resp.append(line2)
                         else:
                             pass
