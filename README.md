@@ -1,5 +1,5 @@
 <img src="https://media.discordapp.net/attachments/461563270411714561/956848595636731934/bi4all-logo-0D229C7CAD-seeklogo.com.png" alt="42Chain Logo" width="104px" height="42px" align="right"/>
-<h1>Bi4All_Hackathon</h1>
+<h1>BI4All_Hackathon</h1>
 
 <h2> Index </h2>
 <p><a href="#rmap">
