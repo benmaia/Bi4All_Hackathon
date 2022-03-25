@@ -8,7 +8,7 @@
 <p><a href="#frmap">
   Future Roadmap
 </a></p>
-<p><a href="cv">
+<p><a href="#cv">
   Team
 </a></p>
 
